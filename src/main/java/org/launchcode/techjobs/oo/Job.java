@@ -77,25 +77,26 @@ public class Job {
 
     @Override
     public String toString() {
-        String dan = "Data not available";
+        String dna = "Data not available";
         if (name == null || name.equals("")) {
-            name = dan;
+            name = dna;
         }
         if (employer == null || Objects.equals(employer.getValue(), "")) {
             assert employer != null;
-            employer.setValue(dan);
+            employer.setValue(dna);
+
         }
         if(location == null || Objects.equals(location.getValue(), "")){
             assert location != null;
-            location.setValue(dan);
+            location.setValue(dna);
         }
         if (positionType == null || Objects.equals(positionType.getValue(), "")){
             assert positionType != null;
-            positionType.setValue(dan);
+            positionType.setValue(dna);
         }
         if(coreCompetency == null || Objects.equals(coreCompetency.getValue(), "")){
             assert coreCompetency != null;
-            coreCompetency.setValue(dan);
+            coreCompetency.setValue(dna);
         }
         return "\n" + "ID: " + id + "\n" +
                 "Name: " + name + "\n" +
