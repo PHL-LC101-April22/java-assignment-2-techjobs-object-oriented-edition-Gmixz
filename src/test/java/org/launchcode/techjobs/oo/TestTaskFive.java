@@ -98,7 +98,7 @@ public class TestTaskFive extends AbstractTest {
     }
 
     @Test
-    public void testTestToStringContainsCorrectLabelsAndDataCallsAssertions (@Mocked Assert mockedAssert) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, IllegalAccessException, InstantiationException {
+    public void TestToStringContainsCorrectLabelsAndDataCallsAssertions (@Mocked Assert mockedAssert) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, IllegalAccessException, InstantiationException {
         Class jobTestClass = getClassByName("test.JobTest");
         JobTest jobTest = (JobTest) jobTestClass.getConstructor().newInstance();
         Method testToStringContainsCorrectLabelsAndDataMethod = jobTestClass.getMethod("testToStringContainsCorrectLabelsAndData");
